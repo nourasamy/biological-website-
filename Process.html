@@ -1,0 +1,54 @@
+<?php
+$con = mysqli_connect("localhost", "root", "", "fci");
+$q = "SELECT * FROM `pneumonia` ";
+$mysq = mysqli_query($con, $q);
+?>
+
+    <!DOCTYPE html>
+    <html>
+
+    <head>
+        <title>Genome Process</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="C.css">
+    </head>
+
+    <body>
+        <script src="J.js"></script>
+        <form name="myForm" action="select.php" method="POST" onsubmit="return validateForm()">
+            <fieldset>
+                <legend>Process</legend>
+
+                <br><label for="id">Genome Name :</label>
+                <br>
+                <input type="text" id="id" name="Genome_Name"><br>
+                <p><b>OR </b></p>
+                <label for="id">Sequence :</label>
+                <br>
+                <textarea name="Sequence"></textarea>
+                <br>
+                <p><b>Choose The Process :</b></p>
+
+                <label for="ch">Transcription:</label>
+                <input type="radio" id="Transcription" name="ch" value="transcription"><br><br>
+
+                <label for="ch">Translation:</label>
+                <input type="radio" id="Translation" name="ch" value="translation"><br><br>
+
+                <label for="ch">GC content:</label>
+                <input type="radio" id="GC" name="ch" value="Gc"><br><br>
+
+                <label for="ch">Reverse Complement:</label>
+                <input type="radio" id="Reverse" name="ch" value="Reverse"><br><br>
+
+                <label for="ch">Complement:</label>
+                <input type="radio" id="Complement" name="ch" value="complement"><br><br>
+
+                <input type="reset" id="reset">
+                <input type="submit" name="submit" value="Submit" /><br><br>
+
+            </fieldset>
+        </form>
+    </body>
+
+    </html>

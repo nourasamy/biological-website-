@@ -1,0 +1,31 @@
+body {
+    /* background: #9c9ea0; */
+    background-image: url('background.jpg');
+    font-size: 20px;
+    width: 100%;
+
+  }
+fieldset{
+    background:rgba(19, 130, 194, 0.432);
+    height: 80%;
+    width: 80%;
+    margin: 0px auto;
+    color:white;
+
+}
+legend{
+    font-weight: 700;
+  font-size: 20px;
+  color:rgb(252, 249, 249);
+  text-transform: uppercase;
+  text-align: center;
+}
+input[type=reset] {
+    background-color: #033d6d;
+    color: white;
+  padding: 10px 32px;
+}
+input[type=submit] {
+    background-color: #033d6d;
+    color: white;
+    padding: 10px 32px;}

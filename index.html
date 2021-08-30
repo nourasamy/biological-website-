@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Genome Process</title>
+      <meta charset="UTF-8">
+      <link rel="stylesheet" href="C.css">
+</head>
+<body>
+  <script src="J.js"></script>
+    <form name="myForm" action='choose.php' method="POST" >
+<fieldset>
+    <legend >Genome Details</legend>
+
+    <p><b>Choose The Process :</b></p>
+
+    <label for="ch" >Insert:</label>
+    <input type="radio"  id="Insert" name="ch" value="Insert" onsubmit="return validateForm()"><br><br>
+    
+    <label for="ch" >Delete:</label>
+    <input type="radio"  id="Delete" name="ch" value="Delete"><br><br>
+    
+    <label for="ch" >Update:</label>
+    <input type="radio"  id="Update" name="ch" value="Update"><br><br>
+    
+    <label for="ch" >Process:</label>
+    <input type="radio" id="Process" name="ch" value="Process"><br><br>
+
+  <input type="submit" name="send" value="Send" /><br><br>
+
+  </fieldset>
+</form>
+</body>
+</html>
+
